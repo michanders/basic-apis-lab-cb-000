@@ -26,5 +26,3 @@ end
 
 
 
-#req.params['client_id'] = "d21bb1579e6320ba"
-#req.params['client_secret'] = "36e2c7c7153ed6999223bf89520256f5297115e1"
