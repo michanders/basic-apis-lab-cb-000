@@ -11,7 +11,7 @@ class RepositoriesController < ApplicationController
         req.params['client_secret'] = client_secret
         req.params['v'] = '20160201'
         req.params['near'] = params[:zipcode]
-        req.params['query'] = 'coffee shop'
+        req.params['query'] = params[:auery]
         req.options.timeout = 0
       end
       body = JSON.parse(@resp.body)
