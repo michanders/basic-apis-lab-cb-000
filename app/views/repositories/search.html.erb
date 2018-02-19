@@ -12,9 +12,8 @@
     <% @repositories.each do |repo| %>
       <li>
         <%= repo["name"] %><br>
+        <%= repo[] %><br>
         <a href="<%= repo['html_url'] %>"><%= repo['html_url'] %></a><br>
-        <%= repo["location"]["address"] %><br>
-        Checkins: <%= venue["stats"]["checkinsCount"] %>
       </li>
     <% end %>
     </ul>
