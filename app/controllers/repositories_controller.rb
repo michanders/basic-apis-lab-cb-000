@@ -13,9 +13,9 @@ class RepositoriesController < ApplicationController
       end
       body = JSON.parse(@resp.body)
       if @resp.success?
-        @venues = body["response"]["venues"]
+        @repositories = body["response"]
       else
-        @error = body["meta"]["errorDetail"]
+        @error = body["message"]
       end
  
     rescue Faraday::ConnectionFailed
